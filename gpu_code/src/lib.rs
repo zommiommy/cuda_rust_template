@@ -41,6 +41,7 @@ pub fn block_idx_x() -> u32{
 }
 
 #[no_mangle]
+/// Actual function called by the CPU code in the GPU
 pub unsafe extern "ptx-kernel" fn my_kernel(
     _input: *mut u32,
     _input_len: usize,
