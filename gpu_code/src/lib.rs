@@ -41,7 +41,7 @@ pub fn block_idx_x() -> u32{
 }
 
 #[no_mangle]
-pub unsafe extern "ptx-kernel" fn kernel(
+pub unsafe extern "ptx-kernel" fn my_kernel(
     _input: *mut u32,
     _input_len: usize,
     output: *mut u32,
