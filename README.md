@@ -17,3 +17,5 @@ cargo run --release
 ```
 
 This is a really bare-bone example and the goal of this repository is to give an working example with as little magical wrappers as possible.
+
+TLDR: the `build.rs` of the `cpu_code` compiles the `gpu_code` to a PTX file which is sent to the driver to be compiled at runtime by the `cpu_code`.
